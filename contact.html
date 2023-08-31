@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+          <meta name ="author" content="Anas muhammed">
+
+              <meta name="describtion" content="This is the web page that I am build for the HTMl tutorials.
+              You can refer this for your tutorial reference">
+
+                <link rel="icon" href="img/html5-logo.png" type="image/x-icon">
+
+             <title>contact</title>
+
+       <link rel="stylesheet" href="main.css" type="text/css">
+
+    </head>
+     <body> 
+       <h1>Contact Info</h1>
+        <article id="contact">
+            <h3>Contact Me</h3>
+            <p>For contact me you have to fill this form </p>
+            <form action="https://httpbin.org/get" method="get">
+              <fieldset>
+                <legend>Personal Info</legend>
+            <p>
+              <label for="firstName">First Name : </label>
+             <input type="text" name="firstName" id="firstName" placeholder="Name" autocomplete="on"
+             required autofocus>
+            </p>
+            <p>
+              <label for="lastName">Last Name :</label>
+             <input type="text" name="lastName" id="lastName" placeholder="Name" autocomplete="on"
+             required >
+            </p>
+            <p>
+              <label for="email">Email :</label>
+              <input type="email" name="email" id="email" placeholder="example@gmail.com"
+              required autocomplete="on">
+            </p>
+            <p>
+              <label for="phone">Phone:</label>
+             <input type="tel" name="phone" id="phone" placeholder="12345 67890" autocomplete="on"
+             required >
+            </p>
+            <p>
+              <label for="username">User Name :</label>
+             <input type="text" name="username" id="username" placeholder="user_name" autocomplete="on"
+             required >
+            </p>
+            <p>
+              <label for="password">Password :</label>
+             <input type="password" name="password" id="password"  autocomplete="on"
+             required >
+            </p>
+            <p>
+              <label for="cp"> Confirm Password :</label>
+             <input type="password" name="cp" id="cp"  autocomplete="on"
+             required >
+            </p>
+            <p>
+              <label for="dob"> Date of Birth :</label>
+             <input type="date" name="dob" id="dob"  autocomplete="on"
+             required >
+            </p>
+              </fieldset>
+              <fieldset>
+                <legend>professional Info</legend>
+                <p>
+                  <label for="cstatus">Current Status :</label>
+               <select name="cstatus" id="cstatus">
+                <option value="Select">Select</option>
+                <option value="student">student</option>
+                <option value="workingprofessional">Working Professional</option>
+                <option value="other">Other</option>
+               </select>
+                </p>
+                <p>
+                  <label for="education">Education :</label>
+               <select name="education" id="education">
+                <option value="Select">Select</option>
+                <option value="degree">Degree</option>
+                <option value="diploma">Diploma</option>
+                <option value="12th">12th</option>
+                <option value="10th">10th</option>
+                <option value="other">Other</option>
+               </select>
+                </p>
+                <p>
+                  <label for="cwfield">Current Working Field :</label>
+               <select name="cwfield" id="cwfield">
+                <option value="Select">Select</option>
+                <option value="IT">IT </option>
+                <option value="Medical">Medical</option>
+                <option value="engineering">Engineering</option>
+                <option value="Finace">Finace</option>
+                <option value="other">Other</option>
+               </select>
+                </p>
+                <p>
+                  <label for="dreamjob">Dream Job</label>
+                  <input type="text" name="dreamjob" id="dreamjob">
+                </p>
+              </fieldset>
+              <fieldset>
+                <legend> Known Languages </legend>
+                <p>
+                <input type="checkbox" name="languages" id="English" value="English">
+                <label for="English">English</label>
+              </p>
+              <p>
+                <input type="checkbox" name="languages" id="German" value="German">
+                <label for="German">German</label>
+              </p>
+              <p>
+                <input type="checkbox" name="languages" id="Arabic" value="Arabic">
+                <label for="Arabic">Arabic</label>
+              </p>
+              <p>
+                <input type="checkbox" name="languages" id="Hindi" value="Hindi">
+                <label for="Hindi">Hindi</label>
+              </p>
+              <p>
+                <input type="checkbox" name="languages" id="French" value="French">
+                <label for="French">French</label>
+              </p>
+              <p>
+                <input type="checkbox" name="languages" id="lother" value="lother">
+                <label for="lother">other</label>
+              </p>
+            
+                
+              </fieldset>
+              <fieldset>
+                <legend> Known programming Languages </legend>
+                <p>
+                <input type="checkbox" name="planguages" id="HTMl" value="HTMl">
+                <label for="HTMl">HTML</label>
+              </p>
+              <p>
+                <input type="checkbox" name="planguages" id="CSS" value="CSS">
+                <label for="CSS">CSS</label>
+              </p>
+              <p>
+                <input type="checkbox" name="planguages" id="JavaScript" value="JavaScript">
+                <label for="JavaScript">JavaScript</label>
+              </p>
+              <p>
+                <input type="checkbox" name="planguages" id="Python" value="Python">
+                <label for="Python">Python</label>
+              </p>
+              <p>
+                <input type="checkbox" name="planguages" id="C/C++" value="C/C++">
+                <label for="C/C++">C/C++</label>
+              </p>
+              <p>
+                <input type="checkbox" name="planguages" id="plother" value="plother">
+                <label for="plother">other</label>
+              </p>
+              </fieldset>
+              <fieldset>
+                <legend>Description</legend>
+                <p>
+                  <label for="bio"><strong></strong>About Yourself</label>
+     
+                  <br>
+                 
+                  <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Type about you"></textarea>
+                </p>
+              </fieldset>
+              <button type="submit">Submit</button>
+              <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+              <button type="reset">Reset</button>
+            </form>
+        </article>
+
+    </body>
+</html>
